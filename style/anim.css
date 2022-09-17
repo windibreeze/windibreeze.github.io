@@ -1,0 +1,17 @@
+.app {
+    opacity: 0;
+    animation: start 1s linear;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes start {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 90vh;
+    }
+}

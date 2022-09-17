@@ -1,0 +1,44 @@
+.hide {
+    display: none;
+}
+
+.tag-content-no-user {
+    color: white;
+    font-size: 30px;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+    padding-top: 20%;
+}
+
+.app-card__img, .app-card__subtext {
+    text-align: center;
+}
+
+.side-menu a {
+    color: var(--inactive-color) !important;
+}
+
+.side-title.is-active, .side-menu a.is-active {
+    color: var(--theme-color) !important;
+}
+
+.simple-card {
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.simple-card .card {
+    border: 1px solid black;
+}
+
+.simple-card .footer {
+    color: var(--theme-color);
+    font-size: 20px;
+}

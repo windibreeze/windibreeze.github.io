@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>breeze framework</title>
+    <meta charset="UTF-8"/>
+    <title>Welcome to the world of cards</title>
+    <link href="./style/normalize.min.css" rel="stylesheet"/>
+    <link href="./style/index.css" rel="stylesheet"/>
+    <link href="./style/style.css" rel="stylesheet"/>
+    <link href="./style/anim.css" rel="stylesheet"/>
+    <link href="./card/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>breeze framework home page</p>
+<div class="dark-light">
+    <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+    >
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+    </svg>
+</div>
+<div class="app">
+    <div class="header">
+        <div class="menu-circle"></div>
+        <div class="header-menu">
+            <a class="menu-link is-active" href="#" tag="home">首页</a>
+            <a class="menu-link" href="#" tag="shop">商店</a>
+            <a class="menu-link" href="#" tag="deck">卡组列表</a>
+            <a class="menu-link" href="#" tag="play">开始对战</a>
+            <a class="menu-link" href="#" tag="record">录像记录</a>
+        </div>
+        <div class="header-profile">
+            <div class="notification">
+                <!--                <span class="notification-number">3</span>-->
+                <svg
+                        class="feather feather-bell"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                >
+                    <path
+                            d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"
+                    />
+                </svg>
+            </div>
+            <img
+                    alt=""
+                    class="profile-img"
+                    src="./img/user.jpeg"
+            />
+        </div>
+    </div>
+    <div>
+        <div class="tag-content home ">
+            <div class="wrapper">
+                <div class="simple-card">
+                    <div class="card yellow">
+                    </div>
+                    <div class="footer">每日一卡</div>
+                </div>
+            </div>
+        </div>
+        <div class="tag-content shop hide">
+            <div class="wrapper">
+                <div class="left-side">
+                    <div class="side-wrapper">
+                        <div class="side-title is-active">商品列表</div>
+                        <div class="side-menu">
+                            <a href="#" class="is-active">
+                                补充包
+                            </a>
+                            <a href="#" title="暂未开放">
+                                预组
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-container">
+                    <div class="main-header">
+                        <a class="menu-link-main" href="#"></a>
+                        <div class="header-menu">
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content-section">
+                            <div class="apps-card">
+                                <div class="app-card">
+                                    <div class="app-card__img">
+                                        <img src="./img/sao10th.jpeg">
+                                    </div>
+                                    <div class="app-card__subtext">
+                                        <br>刀剑神域 10th Anniversary 补充包
+                                    </div>
+                                    <div class="app-card-buttons">
+                                        <button class="content-button status-button">购买</button>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <div class="app-card__img">
+                                        <img src="./img/fgo.jpeg">
+                                    </div>
+                                    <div class="app-card__subtext">
+                                        Fate/Grand Order <br>-绝对魔兽战线 巴比伦尼亚- 补充包
+                                    </div>
+                                    <div class="app-card-buttons">
+                                        <button class="content-button status-button">购买</button>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <div class="app-card__img">
+                                        <img src="./img/pjsk.jpg">
+                                    </div>
+                                    <div class="app-card__subtext">
+                                        <br>世界计划彩色舞台 feat. 初音未来 补充包
+                                    </div>
+                                    <div class="app-card-buttons">
+                                        <button class="content-button status-button">购买</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tag-content tag-content-no-user deck hide">
+            <span>暂未开放</span>
+        </div>
+        <div class="tag-content tag-content-no-user play hide">
+            <span>暂未开放</span>
+        </div>
+        <div class="tag-content tag-content-no-user record hide">
+            <span>暂未开放</span>
+        </div>
+    </div>
+    <div class="overlay-app"></div>
+</div>
+<!-- partial -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./card/script.js"></script>
 </body>
 </html>
